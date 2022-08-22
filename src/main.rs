@@ -4,7 +4,7 @@ use std::io::Write;
 
 fn main() {
     // Check if mcsm_data folder exists
-    if !fs::metadata("mcsm_data").is_ok() {
+    if fs::metadata("mcsm_data").is_err() {
         fs::create_dir("mcsm_data").expect("Couldn't create mcsm_data folder");
     }
 
