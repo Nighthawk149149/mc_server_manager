@@ -58,7 +58,7 @@ fn main() {
                     })
                 })
                 .collect::<Vec<String>>();
-            contents.iter().for_each(|f| println!("#> {}", f));
+            contents.iter().for_each(|f| println!("> {}", f));
         }
         // This will never be reached
         _ => (),
